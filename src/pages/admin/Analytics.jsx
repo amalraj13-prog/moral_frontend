@@ -112,6 +112,7 @@ export default function Analytics() {
           </h2>
         </div>
 
+        <div className="overflow-x-auto">
         <table className="table-modern">
           <thead>
             <tr>
@@ -151,6 +152,7 @@ export default function Analytics() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     </AdminLayout>
   );

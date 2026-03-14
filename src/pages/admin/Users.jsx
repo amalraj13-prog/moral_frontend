@@ -43,8 +43,8 @@ export default function Users() {
   return (
     <AdminLayout>
       {/* Header */}
-      <div className="flex items-center gap-3 mb-8 animate-slide-up">
-        <div className="w-10 h-10 rounded-xl flex items-center justify-center"
+      <div className="flex items-center flex-wrap gap-3 mb-8 animate-slide-up">
+        <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{ background: 'linear-gradient(135deg, #a855f7, #c084fc)' }}>
           <UsersIcon className="h-5 w-5 text-white" />
         </div>
@@ -60,6 +60,7 @@ export default function Users() {
         boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
         border: '1px solid #f1f5f9',
       }}>
+        <div className="overflow-x-auto">
         <table className="table-modern">
           <thead>
             <tr>
@@ -111,6 +112,7 @@ export default function Users() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     </AdminLayout>
   );

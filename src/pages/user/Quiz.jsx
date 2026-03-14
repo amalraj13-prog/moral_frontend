@@ -105,7 +105,7 @@ export default function Quiz() {
         </div>
 
         {/* Card */}
-        <div className="rounded-2xl p-8 animate-scale-in" style={{
+        <div className="rounded-2xl p-5 sm:p-8 animate-scale-in" style={{
           background: 'rgba(255,255,255,0.06)',
           backdropFilter: 'blur(24px)',
           WebkitBackdropFilter: 'blur(24px)',
@@ -127,7 +127,7 @@ export default function Quiz() {
                 </span>
               </div>
 
-              <h3 className="text-xl font-medium text-white mb-8 leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-medium text-white mb-6 sm:mb-8 leading-relaxed">
                 {questions[currentQ].question}
               </h3>
 

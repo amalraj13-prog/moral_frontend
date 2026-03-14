@@ -72,10 +72,11 @@ export default function Navbar({ user }) {
                     <div className="flex items-center gap-3">
                         {/* XP Badge */}
                         {user && (
-                            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold"
+                        <div className="flex items-center gap-1 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold"
                                 style={{ background: 'linear-gradient(135deg, #fef3c7, #fde68a)', color: '#92400e', border: '1px solid #fcd34d' }}>
-                                <Star className="h-3.5 w-3.5 fill-current" />
-                                <span>{user.totalScore || 0} XP</span>
+                                <Star className="h-3 w-3 sm:h-3.5 sm:w-3.5 fill-current" />
+                                <span>{user.totalScore || 0}</span>
+                                <span className="hidden sm:inline"> XP</span>
                             </div>
                         )}
 

@@ -79,14 +79,14 @@ export default function BadgeManage() {
                             <p className="text-sm" style={{ color: '#64748b' }}>{badges.length} total badges</p>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="relative w-full sm:w-auto">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4" style={{ color: '#94a3b8' }} />
                         <input
-                            className="input-modern pl-10"
+                            className="input-modern pl-10 w-full"
                             placeholder="Search badges..."
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            style={{ width: '260px' }}
+                            style={{ minWidth: '200px' }}
                         />
                     </div>
                 </div>

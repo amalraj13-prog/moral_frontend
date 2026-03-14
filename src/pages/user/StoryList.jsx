@@ -27,20 +27,20 @@ export default function StoryList() {
 
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-4">
-        <div className="animate-slide-up">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center"
+      <div className="animate-slide-up">
+          <div className="flex items-center gap-3 mb-1">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7)' }}>
               <BookOpen className="h-5 w-5 text-white" />
             </div>
-            <h1 className="text-3xl font-bold" style={{ color: '#1e293b' }}>
+            <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: '#1e293b' }}>
               Panchatantra Stories
             </h1>
           </div>
-          <p className="ml-13" style={{ color: '#64748b' }}>
+          <p className="pl-13 text-sm sm:text-base" style={{ color: '#64748b', paddingLeft: '52px' }}>
             Explore timeless tales of wisdom and adventure
           </p>
-        </div>
+      </div>
       </div>
 
       {/* Story Grid */}
