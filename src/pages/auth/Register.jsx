@@ -2,7 +2,7 @@ import { useState } from "react";
 import { UserPlus, Sparkles } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import API from "../../services/api";
-
+import logoImg from "../../assets/image/logo.png";
 export default function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -55,7 +55,7 @@ export default function Register() {
             <div className="relative">
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center animate-pulse-glow"
                 style={{ background: 'linear-gradient(135deg, #22c55e, #16a34a)', boxShadow: '0 8px 24px rgba(34,197,94,0.4)' }}>
-                <UserPlus className="h-8 w-8 text-white" />
+                <img src={logoImg} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="rounded-2xl" />
               </div>
               <div className="absolute -top-1 -right-1">
                 <Sparkles className="h-5 w-5 text-amber-400 animate-float" />

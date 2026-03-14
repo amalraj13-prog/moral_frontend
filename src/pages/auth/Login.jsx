@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BookOpen, Sparkles } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import API from "../../services/api";
-
+import logoImg from "../../assets/image/logo.png";
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -51,9 +51,8 @@ export default function Login() {
           {/* Icon */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center animate-pulse-glow"
-                style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7)', boxShadow: '0 8px 24px rgba(99,102,241,0.4)' }}>
-                <BookOpen className="h-8 w-8 text-white" />
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center animate-pulse-glow">
+                <img src={logoImg} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="rounded-2xl" />
               </div>
               <div className="absolute -top-1 -right-1">
                 <Sparkles className="h-5 w-5 text-amber-400 animate-float" />
@@ -126,10 +125,10 @@ export default function Login() {
             </Link>
           </p>
 
-          <div className="mt-8 pt-6 text-xs text-left" style={{ borderTop: '1px solid rgba(255,255,255,0.06)', color: '#475569' }}>
+          {/* <div className="mt-8 pt-6 text-xs text-left" style={{ borderTop: '1px solid rgba(255,255,255,0.06)', color: '#475569' }}>
             <p><strong>Project By:</strong> S.Amal Raj (23UCS629)</p>
             <p><strong>Class:</strong> III-B.Sc Computer Science "B"</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

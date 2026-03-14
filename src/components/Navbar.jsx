@@ -36,12 +36,11 @@ export default function Navbar({ user }) {
                     {/* Logo */}
                     <Link to="/dashboard" className="flex items-center gap-2.5 group">
                         <img src={logoImg} alt="Moral Mitra" className="h-9 w-9 rounded-xl object-cover shadow-md" />
-                        <div className="hidden sm:flex flex-col leading-tight">
+                        <div className="sm:flex flex-col leading-tight">
                             <span className="text-lg font-bold"
                                 style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                                 Moral Mitra
                             </span>
-                            <span className="text-xs font-medium" style={{ color: '#94a3b8' }}>Learning by Playing</span>
                         </div>
                     </Link>
 
